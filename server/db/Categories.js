@@ -1,6 +1,7 @@
 const pg = require('pg');
 const db = require('../db.js');
 
+
 module.exports.getAllCategories = () => {
   return db.query("SELECT name FROM categories");
 };
